@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LARE App</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,23 +17,51 @@
     </section>
     <div class="second-screen">
     <section class="screen-section">
-        <div class="screen-left">
+        <div class="screen-left" data-aos="fade-down"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center">
             <img src="img/screen-1.png" alt="screenshot-1">
         </div>
-        <div class="screen-right">
+        <div class="screen-right"     
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="250"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center">
             <img src="img/screen-2.png" alt="screenshot-2">
         </div>
         <!-- <div class="screen-title">
             <h1 class="text-xxl">LARE APP</h1>
         </div> -->
     </section>
-    <section class="app-section">
-        <h1 class="text-xxl">LARE APP</h1>
-        <div>
+    <section class="app-section" id="app-section">
+        <h1 data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="600"
+        data-aos-easing="ease-in-out"><span>LARE</span> APP</h1>
+        <div data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="600"
+        data-aos-easing="ease-in-out">
             <h3 class="app-description">Master LARE Exam like a Pro.</h3>
             <h3 class="app-description">Practice Anywhere, Anytime.</h3>
         </div>
-        <div class="app-join-container">
+        <div class="app-join-container" 
+        data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="600"
+        data-aos-easing="ease-in-out">
             <a class="app-button" href="https://testflight.apple.com/join/5mBEgFmd" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-google-play" viewBox="0 0 16 16">
                     <path d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055zM1 13.396V2.603L6.846 8zM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27"/>
@@ -49,10 +82,21 @@
                 </div>
             </a>
         </div>
-        <div class="footer">
+        <div class="footer" data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="600"
+        data-aos-easing="ease-in-out"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-anchor="#app-section"
+        >
             <p class="text-xs">Copyright © LARE APP 2024</p>
         </div>
     </section>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
