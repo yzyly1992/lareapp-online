@@ -1,7 +1,26 @@
-body, h1, h2, h3, h4, h5, p {
+body, h1, h2, h3, h4, h5, p, b {
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: rgba(240,245,240,0.4);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar b {
+    font-size: 24px;
+    font-weight: 700;
+    color: #332C23;
 }
 
 .second-screen {
@@ -63,15 +82,20 @@ body, h1, h2, h3, h4, h5, p {
     margin-top: 20px;
     border: none;
     text-decoration: none;
-    background-color: lightgray;
+    background-color: rgb(207, 210, 173);
     cursor: pointer;
     display: flex;
-    border-radius: 20px;
+    border-radius: 30px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 20px;
     color: #332C23;
+    transition: box-shadow 0.3s ease; 
+}
+
+.app-button:hover {
+    box-shadow: 5px 5px 10px rgba(36, 36, 36, 0.5); 
 }
 
 h1 {
