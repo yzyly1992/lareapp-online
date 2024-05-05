@@ -59,9 +59,10 @@ body, h1, h2, h3, h4, h5, p {
 }
 
 .app-button {
-    padding: 20px 40px;
+    padding: 20px 50px;
     margin-top: 20px;
     border: none;
+    text-decoration: none;
     background-color: lightgray;
     cursor: pointer;
     display: flex;
