@@ -56,13 +56,44 @@ body, h1, h2, h3, h4, h5, p, b {
     position: absolute;
     top: 50px;
     right: 360px;
-
+    z-index: 80;
 }
 
 .screen-right {
     position: absolute;
     top: 180px;
     right: 100px;
+    z-index: 80;
+}
+
+.bg-leaf-left {
+    position: absolute;
+    bottom: 150px;
+    right: 450px;
+    /* animation with 4s delay */
+    animation: moveUpDown 5s infinite ease-in-out;
+    animation-delay: 2s;
+}
+
+.bg-leaf-left img {
+    width: 250px;
+    height: auto;
+}
+
+.bg-leaf-right {
+    position: absolute;
+    top: 150px;
+    left: 10px;
+    animation: moveUpDown 5s infinite ease-in-out;
+}
+
+.bg-leaf-right img {
+    width: 450px;
+    height: auto;
+}
+
+.sec-right {
+    position: relative;
 }
 
 .app-section {
@@ -73,8 +104,9 @@ body, h1, h2, h3, h4, h5, p, b {
     justify-content: center;
     align-items: start;
     height: 880px;
-    z-index: 10;
+    z-index: 80;
     gap: 20px;
+    position: relative;
 }
 
 .app-button {
@@ -114,11 +146,6 @@ h1 {
     font-weight: 700;
 }
 
-.screen-title {
-    position: absolute;
-    top: 50px;
-}
-
 h3 {
     font-size: 24px;
     font-weight: 400;
@@ -129,9 +156,21 @@ h3 {
     font-size: 16px;
     font-weight: 400;
     color: gray;
+    text-align: center;
 }
 
 .footer {
-    margin-top: 40px;
+    padding-bottom: 40px;
     font-size: 10px;
+    background-color: #f7f8fc;
+}
+
+/* create animation to move up and down */
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
 }
