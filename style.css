@@ -28,6 +28,12 @@ body, h1, h2, h3, h4, h5, p, b {
     color: #332C23;
 }
 
+@media screen and (max-width: 768px) {
+    .navbar a {
+        display: none;
+    }
+}
+
 .second-screen {
     /* max-width: 1200px; */
     display: grid;
