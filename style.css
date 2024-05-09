@@ -185,3 +185,8 @@ h3 {
         transform: translateY(-15px);
     }
 }
+
+p a {
+    color: #778013;
+    text-decoration: none;
+}
